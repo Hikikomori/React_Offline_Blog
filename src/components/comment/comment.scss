@@ -1,0 +1,51 @@
+.comment {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:not(:last-child) {
+     border-bottom: 1px dashed rgba(0,0,0,.5);
+  }
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.comment__delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:hover {
+    .comment__delete-icon {
+      fill: rgba(255,0,0,.8);
+    }
+  }
+}
+
+.comment__delete-icon {
+  transition: all .4s ease;
+}
+
+.comment__author {
+  font-size: .9em;
+  margin-top: 0;
+}
+
+.comment__timestamp {
+  font-size: .9em;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.comment__text {
+  width: 100%;
+  padding: 0 10px;
+}

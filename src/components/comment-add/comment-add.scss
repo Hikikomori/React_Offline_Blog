@@ -1,0 +1,60 @@
+.comment-add {
+
+}
+
+.comment-add__form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.comment-add__input-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.comment-add__input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+
+  &--text {
+    height: 40px;
+  }
+
+  &--textarea {
+    resize: none;
+    height: 120px;
+  }
+}
+
+.comment-add__submit {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  height: 40px;
+  background-color: rgba(0,128,255,.2);
+  padding: 0 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all .4s ease;
+
+  &:hover {
+    border: 2px solid rgba(0,128,255,.5);
+    box-shadow: 0 10px 32px -15px rgba(0,128,255,.2);
+
+    .comment-add__submit-icon {
+      fill: rgba(0,128,255,.5);
+    }
+  }
+}
+
+.comment-add__submit-icon {
+  margin-right: 10px;
+  transition: all .4s ease;
+}

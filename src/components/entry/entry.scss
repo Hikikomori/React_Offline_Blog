@@ -1,0 +1,37 @@
+.entry {
+  background-color: rgba(0,0,0,.1);
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.entry__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #000;
+  transition: all .4s ease;
+
+  &:hover {
+    box-shadow: 0 10px 32px -15px rgba(0,0,0,0.35);
+  }
+}
+
+.entry__heading {
+  width: 100%;
+}
+
+.entry__shortDesc {
+  max-width: 90%;
+}
+
+.entry__comments {
+  display: flex;
+  align-items: center;
+
+}
+
+.entry__comments-icon {
+  margin-right: 5px;
+}
